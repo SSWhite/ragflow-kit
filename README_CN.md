@@ -25,39 +25,7 @@ RAGFlow Kit 是 OpenClaw 的插件，使 Agent 能够通过自然语言对 RAGFl
 |------|------|
 | `rag_search` | 在已配置的知识库中搜索文档 |
 | `rag_upload` | 上传文件到知识库（自动触发解析） |
-| `rag_delete` | 从知识库删除文档 |
-
----
-
-## 安装
-
-### 作为 npm 包安装
-
-```bash
-npm install ragflow-kit
-```
-
-### 作为 OpenClaw 插件安装（从源码）
-
-```bash
-# 克隆仓库
-git clone https://github.com/YOUR_USERNAME/ragflow-kit.git
-cd ragflow-kit
-
-# 安装依赖
-npm install
-
-# 编译
-npm run build
-
-# 复制到 OpenClaw 插件目录
-cp -r dist ~/.openclaw/plugins/ragflow-kit
-```
-
----
-
 ## 配置
-
 编辑 OpenClaw 配置文件（`openclaw.json`）：
 
 ```json
@@ -266,30 +234,6 @@ ragflow-kit/
 
 ---
 
-## 开发
-
-### 前置要求
-
-- Node.js 18+
-- TypeScript 5.0+
-- 一个运行中的 RAGFlow 实例
-
-### 从源码构建
-
-```bash
-npm install
-npm run build
-```
-
-### 发布到 npm
-
-```bash
-npm login
-npm run build
-npm publish --access public
-```
-
----
 
 ## 架构说明
 
