@@ -1,0 +1,55 @@
+{
+  "id": "ragflow-kit",
+  "name": "ragflow-kit",
+  "version": "1.0.0",
+  "description": "RAGFlow Knowledge Base Retrieval Plugin for OpenClaw",
+  "main": "./dist/index.js",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {
+      "ragflow": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "api_url": { "type": "string" },
+          "api_key": { "type": "string" }
+        },
+        "required": ["api_url", "api_key"]
+      },
+      "retrieval": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "chunk_size": { "type": "number" },
+          "min_similarity": { "type": "number" }
+        }
+      },
+      "access": {
+        "type": "object",
+        "additionalProperties": true,
+        "description": "Access control: agents and teams with search/upload/delete permissions",
+        "properties": {
+          "agents": {
+            "type": "object",
+            "additionalProperties": true,
+            "description": "Agent permissions: { agentId: { search_kbs: [], upload_kbs: [], delete_kbs: [] } }"
+          },
+          "teams": {
+            "type": "object",
+            "additionalProperties": true,
+            "description": "Team permissions: { teamId: { search_agents: [], upload_agents: [], delete_agents: [], search_kbs: [], upload_kbs: [], delete_kbs: [] } }"
+          }
+        }
+      },
+      "provenance": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "enabled": { "type": "boolean" },
+          "source_url": { "type": "string", "description": "溯源网址，例如: http://example.com" }
+        }
+      }
+    }
+  }
+}
