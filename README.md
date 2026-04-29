@@ -31,32 +31,6 @@ RAGFlow Kit is an OpenClaw plugin that enables agents to search, upload, and del
 
 ---
 
-## Installation
-
-### As npm package
-
-```bash
-npm install ragflow-kit
-```
-
-### As OpenClaw plugin (from source)
-
-```bash
-# Clone the repo
-git clone https://github.com/YOUR_USERNAME/ragflow-kit.git
-cd ragflow-kit
-
-# Install dependencies
-npm install
-
-# Build
-npm run build
-
-# Copy to OpenClaw plugins directory
-cp -r dist ~/.openclaw/plugins/ragflow-kit
-```
-
----
 
 ## Configuration
 
