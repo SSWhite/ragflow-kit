@@ -268,31 +268,6 @@ ragflow-kit/
 
 ---
 
-## Development
-
-### Prerequisites
-
-- Node.js 18+
-- TypeScript 5.0+
-- A running RAGFlow instance
-
-### Build from source
-
-```bash
-npm install
-npm run build
-```
-
-### Publish to npm
-
-```bash
-npm login
-npm run build
-npm publish --access public
-```
-
----
-
 ## Architecture Notes
 
 ### KB Name → ID Resolution
