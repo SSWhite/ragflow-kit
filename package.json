@@ -1,0 +1,37 @@
+{
+  "name": "ragflow-kit",
+  "version": "1.0.0",
+  "description": "RAGFlow Knowledge Base Retrieval Plugin for OpenClaw",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist/", "openclaw.plugin.json"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/ragflow-kit"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "openclaw",
+    "plugin",
+    "ragflow",
+    "knowledge-base",
+    "retrieval"
+  ],
+  "author": "",
+  "license": "MIT",
+  "openclaw": {
+    "extensions": ["./dist/index.js"],
+    "compat": {
+      "pluginApi": "1.0.0"
+    },
+    "build": {
+      "openclawVersion": ">=1.0.0"
+    }
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
