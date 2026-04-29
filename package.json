@@ -1,12 +1,16 @@
 {
   "name": "ragflow-kit",
-  "version": "1.0.10",
+  "version": "1.0.12",
   "description": "RAGFlow Knowledge Base Retrieval Plugin for OpenClaw",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "openclaw.plugin.json"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/SSWhite/ragflow-kit"
+    "url": "https://github.com/YOUR_USERNAME/ragflow-kit"
   },
   "scripts": {
     "build": "tsc",
@@ -26,7 +30,7 @@
       "./dist/index.js"
     ],
     "compat": {
-      "pluginApi": "2026.4.22"
+      "pluginApi": ">=2026.4.22"
     },
     "build": {
       "openclawVersion": ">=2026.4.22"
