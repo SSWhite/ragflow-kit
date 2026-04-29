@@ -1,3 +1,5 @@
+[English](./README.md) | [中文](./README_CN.md)
+
 # RAGFlow Kit
 
 > RAGFlow Knowledge Base Retrieval Plugin for OpenClaw
