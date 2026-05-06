@@ -66,7 +66,7 @@ openclaw plugins install ./
           },
           "retrieval": {
             "chunk_size": 6,
-            "min_similarity": 0.6
+            "min_similarity": 0.2
           },
           "access": {
             "agents": {
@@ -109,7 +109,7 @@ openclaw plugins install ./
 | 字段 | 类型 | 必填 | 默认值 | 说明 |
 |------|------|------|--------|------|
 | `chunk_size` | number | 否 | `6` | 最大返回片段数量 |
-| `min_similarity` | number | 否 | `0.6` | 最低相似度阈值（0–1） |
+| `min_similarity` | number | 否 | `0.2` | 最低相似度阈值（0–1） |
 
 #### `access` — 权限控制
 

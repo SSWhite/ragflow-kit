@@ -74,7 +74,7 @@ Edit your OpenClaw configuration file (`openclaw.json`):
           },
           "retrieval": {
             "chunk_size": 6,
-            "min_similarity": 0.6
+            "min_similarity": 0.2
           },
           "access": {
             "agents": {
@@ -117,7 +117,7 @@ Edit your OpenClaw configuration file (`openclaw.json`):
 | Field | Type | Required | Default | Description |
 |-------|------|----------|---------|-------------|
 | `chunk_size` | number | No | `6` | Maximum number of chunks to return |
-| `min_similarity` | number | No | `0.6` | Minimum similarity threshold (0–1) |
+| `min_similarity` | number | No | `0.2` | Minimum similarity threshold (0–1) |
 
 #### `access` — Permission control
 
