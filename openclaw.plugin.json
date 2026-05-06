@@ -52,4 +52,12 @@
       }
     }
   }
+,
+  "contracts": {
+    "tools": [
+      "rag_search",
+      "rag_upload",
+      "rag_delete"
+    ]
+  }
 }
