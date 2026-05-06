@@ -13,7 +13,7 @@ export const defaultConfig = {
   },
   retrieval: {
     chunk_size: 6,
-    min_similarity: 0.6,
+    min_similarity: 0.2,
   },
   access: {
     agents: {
